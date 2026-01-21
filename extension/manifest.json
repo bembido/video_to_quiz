@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "In-Video Quiz Gate",
+  "version": "0.1.0",
+  "description": "Shows quizzes at segment boundaries and locks playback until answered.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "http://localhost/*",
+    "http://127.0.0.1/*",
+    "http://0.0.0.0/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "In-Video Quiz"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

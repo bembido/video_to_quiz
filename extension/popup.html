@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>In-Video Quiz</title>
+    <style>
+      body {
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 14px;
+        width: 260px;
+        background: #f7f4ef;
+        color: #1b1b1b;
+      }
+      h1 {
+        font-size: 16px;
+        margin: 0 0 10px 0;
+      }
+      label {
+        font-size: 12px;
+        display: block;
+        margin-bottom: 6px;
+      }
+      input {
+        width: 100%;
+        padding: 8px;
+        border-radius: 6px;
+        border: 1px solid #c7c1b9;
+        background: #fff;
+        font-size: 12px;
+      }
+      button {
+        margin-top: 10px;
+        width: 100%;
+        border: none;
+        border-radius: 6px;
+        padding: 8px;
+        font-size: 12px;
+        cursor: pointer;
+        background: #1b1b1b;
+        color: #fff;
+      }
+      #status {
+        margin-top: 8px;
+        font-size: 11px;
+        color: #2d6b3f;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>In-Video Quiz</h1>
+    <label for="apiUrl">API base URL</label>
+    <input id="apiUrl" type="text" placeholder="http://localhost:8000" />
+    <button id="save">Save</button>
+    <div id="status"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+.ivq-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 16, 16, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2147483647;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+.ivq-panel {
+  width: min(640px, 90vw);
+  max-height: 90vh;
+  overflow: auto;
+  background: #f9f3e8;
+  border-radius: 16px;
+  padding: 20px 22px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  color: #1b1b1b;
+}
+
+.ivq-panel h2 {
+  margin: 0 0 6px 0;
+  font-size: 20px;
+}
+
+.ivq-panel p {
+  margin: 0 0 16px 0;
+  font-size: 13px;
+  color: #3a3832;
+}
+
+.ivq-question {
+  margin-bottom: 14px;
+  padding: 12px;
+  background: #fffdf8;
+  border-radius: 12px;
+  border: 1px solid #e4dccf;
+}
+
+.ivq-question h3 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+}
+
+.ivq-options label {
+  display: block;
+  font-size: 13px;
+  margin: 6px 0;
+}
+
+.ivq-options input[type="text"] {
+  width: 100%;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #c7c1b9;
+}
+
+.ivq-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.ivq-button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.ivq-submit {
+  background: #1b1b1b;
+  color: #fff;
+}
+
+.ivq-status {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #8a2f2f;
+}
